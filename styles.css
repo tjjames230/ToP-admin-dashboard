@@ -6,16 +6,17 @@
 
 body {
   display: grid;
-  grid-template-columns: 1fr 4fr;
+  grid-template-columns: 1fr 5fr;
   font-family: "Roboto", sans-serif;
 }
 
 aside {
-  background-color: lightblue;
+  background-color: darkblue;
   display: grid;
   grid-template-rows: 1fr 4fr 5fr;
   height: 100vh;
   gap: 20px;
+  color: white;
 }
 
 main {
@@ -24,11 +25,32 @@ main {
 
 #logo-ctn {
   display: flex;
+  gap: 15px;
   align-items: center;
   justify-content: center;
 }
 
 aside img {
+  height: 25px;
+  width: 25px;
+}
+
+ul {
+  list-style: none;
+  display: grid;
+  grid-template-rows: repeat(6, max(40px));
+  align-items: center;
+  justify-content: center;
+}
+
+li {
+  display: flex;
+  gap: 15px;
+}
+
+.icon-ctn {
+  display: flex;
+  justify-content: center;
   height: 25px;
   width: 25px;
 }
