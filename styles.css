@@ -21,6 +21,8 @@ aside {
 
 main {
   background-color: lightgray;
+  display: grid;
+  grid-template-rows: 1fr 4fr;
 }
 
 #logo-ctn {
@@ -63,4 +65,24 @@ li {
   align-items: center;
   height: 25px;
   width: 25px;
+}
+
+header {
+  background-color: #fff;
+  filter: drop-shadow(0px 0px 10px hsla(0, 0%, 0%, 0.5));
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  align-items: center;
+}
+
+#div1 {
+  background-color: red;
+}
+
+#div2 {
+  background-color: green;
+}
+
+section {
+  background-color: #ebebeb;
 }
