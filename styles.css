@@ -24,6 +24,7 @@ main {
   background-color: lightgray;
   display: grid;
   grid-template-rows: minmax(100px, 1fr) 8fr;
+  max-height: 100vh;
 }
 
 #logo-ctn {
@@ -110,7 +111,29 @@ header {
   font-weight: bold;
 }
 
-#upper-right-ctn {
+#header-mid {
+  display: flex;
+  justify-content: space-around;
+  gap: 15px;
+  height: 30px;
+}
+
+.header-btn {
+  background-color: darkblue;
+  color: white;
+  border: 3px solid darkblue;
+  border-radius: 30px;
+  padding: 0 35px;
+}
+
+.header-btn:hover {
+  cursor: pointer;
+  border: 3px solid darkblue;
+  background-color: white;
+  color: darkblue;
+}
+
+#header-right {
   display: flex;
   align-items: center;
   gap: 35px;
