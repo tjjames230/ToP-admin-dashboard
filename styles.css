@@ -191,7 +191,7 @@ header {
 }
 
 .card-stripe {
-  background-color: red;
+  background: linear-gradient(rgb(6, 109, 243), darkblue);
 }
 
 .card-text {
@@ -203,6 +203,7 @@ header {
 
 .project-body {
   font-size: 14px;
+  flex-grow: 1;
 }
 
 .card-icons-ctn {
