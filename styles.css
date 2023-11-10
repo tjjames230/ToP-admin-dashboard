@@ -23,7 +23,8 @@ aside {
 }
 
 main {
-  display: grid;
+  display: flex;
+  flex-direction: column;
 }
 
 #logo-ctn {
@@ -162,7 +163,7 @@ header {
 }
 
 #content-ctn {
-  background-color: gray;
+  background-color: #e2e2e2;
   padding: 35px;
-  height: 2000px;
+  min-height: calc(100vh - 100px);
 }
