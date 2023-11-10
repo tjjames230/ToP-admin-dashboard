@@ -8,6 +8,7 @@ body {
   display: grid;
   grid-template-columns: minmax(225px, 1fr) 6fr;
   font-family: "Roboto", sans-serif;
+  font-size: 16px;
 }
 
 aside {
@@ -22,7 +23,7 @@ aside {
 main {
   background-color: lightgray;
   display: grid;
-  grid-template-rows: 1fr 4fr;
+  grid-template-rows: minmax(145px, 1fr) 4fr;
 }
 
 #logo-ctn {
@@ -79,11 +80,63 @@ header {
 #search-ctn {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
-#name-ctn {
+#search-bar {
   display: flex;
-  gap: 15px;
+  gap: 0px;
+  padding: 0px;
+  margin: 0px;
+  height: 30px;
+}
+
+#search-bar input {
+  border: none;
+  background-color: #e2e2e2;
+  border-radius: 30px 0px 0px 30px;
+  padding-left: 15px;
+  min-width: 350px;
+}
+
+#search-bar button {
+  border: none;
+  width: 30px;
+  background-color: darkblue;
+  color: white;
+}
+
+#search-bar button i {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+#upper-right-ctn {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+#profile-img-ctn {
+  background-color: lightgray;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+#profile-img {
+  position: relative;
+  top: 16px;
+  left: 9px;
+  font-size: 36px;
+  color: #696b6d;
+}
+
+#lang-select {
+  display: flex;
+  align-items: center;
+  gap: 5px;
 }
 
 #div2 {
