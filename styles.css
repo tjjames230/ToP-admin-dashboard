@@ -23,7 +23,7 @@ aside {
 main {
   background-color: lightgray;
   display: grid;
-  grid-template-rows: minmax(145px, 1fr) 4fr;
+  grid-template-rows: minmax(100px, 1fr) 8fr;
 }
 
 #logo-ctn {
@@ -71,16 +71,10 @@ li {
 header {
   background-color: #fff;
   filter: drop-shadow(0px 0px 10px hsla(0, 0%, 0%, 0.5));
-  display: grid;
-  grid-template-rows: repeat(2, 1fr);
-  align-items: center;
-  padding: 0 35px;
-}
-
-#search-ctn {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 0 35px;
 }
 
 #search-bar {
@@ -106,6 +100,11 @@ header {
   color: white;
 }
 
+#search-bar button:hover {
+  cursor: pointer;
+  background-color: black;
+}
+
 #search-bar button i {
   font-size: 18px;
   font-weight: bold;
@@ -114,7 +113,7 @@ header {
 #upper-right-ctn {
   display: flex;
   align-items: center;
-  gap: 25px;
+  gap: 35px;
 }
 
 #profile-img-ctn {
@@ -139,10 +138,7 @@ header {
   gap: 5px;
 }
 
-#div2 {
-  background-color: green;
-}
-
-section {
+#content-ctn {
   background-color: #ebebeb;
+  padding: 35px;
 }
