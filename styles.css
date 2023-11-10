@@ -12,19 +12,18 @@ body {
 }
 
 aside {
+  padding-top: 35px;
   background-color: darkblue;
-  display: grid;
-  grid-template-rows: 1fr 4fr 5fr;
-  height: 100vh;
-  gap: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
   color: white;
+  z-index: 1;
+  min-height: 100vh;
 }
 
 main {
-  background-color: lightgray;
   display: grid;
-  grid-template-rows: minmax(100px, 1fr) 8fr;
-  max-height: 100vh;
 }
 
 #logo-ctn {
@@ -76,6 +75,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 0 35px;
+  height: 100px;
 }
 
 #search-bar {
@@ -162,6 +162,7 @@ header {
 }
 
 #content-ctn {
-  background-color: #ebebeb;
+  background-color: gray;
   padding: 35px;
+  height: 2000px;
 }
