@@ -198,23 +198,27 @@ header {
   display: flex;
   flex-direction: column;
   padding: 15px;
-  gap: 15px;
+  gap: 20px;
 }
 
 .project-body {
   font-size: 14px;
 }
 
-.card-icons {
+.card-icons-ctn {
   display: flex;
-  gap: 15px;
+  gap: 25px;
   justify-content: end;
+  align-items: center;
 }
 
-.test {
-  height: 30px;
-  width: 30px;
-  background-color: red;
+.card-icon {
+  font-size: 25px;
+}
+
+.card-icon:hover {
+  cursor: pointer;
+  color: darkblue;
 }
 
 #side-content {
