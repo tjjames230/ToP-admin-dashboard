@@ -225,4 +225,14 @@ header {
 #side-content {
   background-color: red;
   padding: 15px;
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  gap: 15px;
+}
+
+#announcement-ctn,
+#trending-ctn {
+  background-color: white;
+  border-radius: 10px;
+  filter: drop-shadow(0px 0px 10px #b4b4b4);
 }
