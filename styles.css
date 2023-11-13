@@ -119,6 +119,22 @@ header {
   height: 30px;
 }
 
+#mobile-nav {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+}
+
+#mobile-nav:hover {
+  cursor: pointer;
+}
+
+.mobile-nav-line {
+  height: 3px;
+  background-color: darkblue;
+  width: 25px;
+}
+
 .header-btn {
   background-color: darkblue;
   color: white;
@@ -154,12 +170,6 @@ header {
   left: 9px;
   font-size: 36px;
   color: #696b6d;
-}
-
-#lang-select {
-  display: flex;
-  align-items: center;
-  gap: 5px;
 }
 
 #content-ctn {
@@ -223,7 +233,6 @@ header {
 }
 
 #side-content {
-  background-color: red;
   padding: 15px;
   font-size: 14px;
 }
@@ -262,4 +271,21 @@ header {
 
 .trending-item p {
   padding-top: 5px;
+}
+
+@media screen and (max-width: 1350px) {
+  #header-mid {
+    display: none;
+  }
+
+  #mobile-nav {
+    display: flex;
+  }
+
+  #projects {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 1050px) {
 }
