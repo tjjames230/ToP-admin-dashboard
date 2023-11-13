@@ -112,11 +112,10 @@ header {
   font-weight: bold;
 }
 
-#header-mid {
+#header-right {
   display: flex;
   justify-content: space-around;
-  gap: 15px;
-  height: 30px;
+  gap: 25px;
 }
 
 #mobile-nav {
@@ -141,6 +140,7 @@ header {
   border: 3px solid darkblue;
   border-radius: 30px;
   padding: 0 35px;
+  height: 30px;
 }
 
 .header-btn:hover {
@@ -150,10 +150,10 @@ header {
   color: darkblue;
 }
 
-#header-right {
+#header-mid {
   display: flex;
   align-items: center;
-  gap: 35px;
+  gap: 25px;
 }
 
 .profile-img-ctn {
@@ -274,7 +274,7 @@ header {
 }
 
 @media screen and (max-width: 1350px) {
-  #header-mid {
+  #header-right {
     display: none;
   }
 
@@ -287,5 +287,29 @@ header {
   }
 }
 
-@media screen and (max-width: 1050px) {
+@media screen and (max-width: 1025px) {
+  #content-ctn {
+    grid-template-columns: 1fr;
+  }
+
+  #projects {
+    grid-template-columns: 1fr;
+  }
+
+  #header-mid {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  body {
+    grid-template-columns: 1fr;
+  }
+
+  #content-ctn {
+    grid-template-columns: 1fr;
+  }
+  aside {
+    display: none;
+  }
 }
